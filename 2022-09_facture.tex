@@ -1,0 +1,17 @@
+\documentclass[french,12pt, origdate]{article}
+\usepackage{facture}
+\usepackage{gensymb}
+
+\input{common}
+\input{client_fictif}
+
+\def\FactureDescr	{%
+Voici le détail de la prestation du mois d'Août 2022.
+}
+
+\AjouterProduit {Journées facturables du 01/08/2022 au 31/08/2022}    {22}              {16000}
+\AjouterProduit {Journées non travaillées du 01/08/2022 au 02/08/2022}    {2}              {-16000}
+
+\begin{document}
+\facture
+\end{document}
